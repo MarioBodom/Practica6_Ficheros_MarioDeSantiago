@@ -1,6 +1,7 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
-        VectorStrings v = new VectorStrings("fichero.txt");
+        String fichero = "E:/DAM/Programacion/Java/Ejercicios iniciales/Practica6_Ficheros_MarioDeSantiago/text.txt";
+        VectorStrings v = new VectorStrings(fichero);
+        System.out.println(v);
     }
 }
