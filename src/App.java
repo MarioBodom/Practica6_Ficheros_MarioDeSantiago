@@ -3,9 +3,8 @@ public class App {
         String fichero = "E:/DAM/Programacion/Java/Ejercicios iniciales/Practica6_Ficheros_MarioDeSantiago/text.txt";
         VectorStrings v = new VectorStrings(fichero);
         System.out.println(v);
-        System.out.println(v);
-        VectorStrings v2 = new VectorStrings();
-        System.out.println(v2);
+
+        v.escribe("E:/DAM/Programacion/Java/Ejercicios iniciales/Practica6_Ficheros_MarioDeSantiago/textoEscrito.txt");
 
     }
 }

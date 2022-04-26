@@ -30,5 +30,34 @@ public class VectorStrings extends Vector {
             System.out.println("Error de entrada/salida");
         }
     }
+
+    // Un  método  escribe  que  grabará  el  contenido  del 
+    // vector en un fichero de texto, cuyo nombre recibe 
+    // el método como parámetro. Cada elemento del vector 
+    // se convertirá en una línea del fichero.
+
+    public void escribe(String fichero){
+        try {
+            FileWriter fw = new FileWriter(fichero);
+            BufferedWriter bw = new BufferedWriter(fw);
+            for (int i = 0; i < this.elementData.length; i++) {
+                
+                String linea = (String) this.elementData[i];
+                if (linea != null) {
+                    bw.write(linea, 0, linea.length());
+                    
+                } else {
+                    
+                    bw.close();
+                }
+            }
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
     
+    public void inserta(String texto){
+
+    }
 }
