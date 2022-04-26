@@ -57,5 +57,17 @@ public class VectorStrings extends Vector {
     
     public void inserta(String texto){
         // TODO Crear metodo inserta
+        try {
+            for (int i = 0; i < elementData.length; i++) {
+                if (texto.compareTo((String) elementAt(i)) > 0) {
+                    this.insertElementAt(texto, i+1);
+                }else if (texto.compareTo((String) elementAt(i)) < 0) {
+                    this.add(texto);
+                }
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+            System.out.println("Que pasa???");
+        }
     }
 }
