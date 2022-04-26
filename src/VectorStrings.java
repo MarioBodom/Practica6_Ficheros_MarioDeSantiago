@@ -41,13 +41,10 @@ public class VectorStrings extends Vector {
             FileWriter fw = new FileWriter(fichero);
             BufferedWriter bw = new BufferedWriter(fw);
             for (int i = 0; i < this.elementData.length; i++) {
-                
                 String linea = (String) this.elementData[i];
                 if (linea != null) {
                     bw.write(linea, 0, linea.length());
-                    
                 } else {
-                    
                     bw.close();
                 }
             }
@@ -58,6 +55,6 @@ public class VectorStrings extends Vector {
     }
     
     public void inserta(String texto){
-
+        // TODO Crear metodo inserta
     }
 }
