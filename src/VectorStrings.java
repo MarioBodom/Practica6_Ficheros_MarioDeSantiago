@@ -43,11 +43,12 @@ public class VectorStrings extends Vector {
             for (int i = 0; i < this.elementData.length; i++) {
                 String linea = (String) this.elementData[i];
                 if (linea != null) {
-                    bw.write(linea, 0, linea.length());
-                } else {
-                    bw.close();
-                }
+                    bw.write(linea);
+                    bw.newLine();
+                } 
+                    
             }
+            bw.close();
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
