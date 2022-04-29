@@ -55,6 +55,7 @@ public class VectorStrings extends Vector {
         }
     }
     
+    // ** No funciona correctamente.
     public void inserta(String texto){
         // TODO Crear metodo inserta
         try {
@@ -67,7 +68,7 @@ public class VectorStrings extends Vector {
             }
         } catch (Exception e) {
             //TODO: handle exception
-            System.out.println("Que pasa???");
+            System.out.println("No funciona correctamente");º
         }
     }
 }
